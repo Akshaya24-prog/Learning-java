@@ -1,0 +1,65 @@
+package project.one;
+
+public class variables {
+
+	public static void main(String[] args) {
+		
+		//primitive variables - simple value stored directly in memory
+		
+		//1. byte (range : -128 to 127) - used for saving memory
+		byte a;//(i) declaring variables
+		a = 100;//(ii) assigning values to variables
+		System.out.println(a);
+		
+		//2. short - larger than byte
+		short b = 20000;
+		System.out.println(b);
+		
+		//3. integer (cannot accept non-integer values)
+		int c ;
+		c = 20000; 
+		
+		//4. long - used to store very large integers
+		long e =1000; // 1000 is an int by default, as java automatically converts to int from long.So no error will be produced. 
+		//However if L is not added to the end of the number error is produced for larger numbers
+		long f = 10000000000L;
+		
+		//5. float
+		float x = 5.5f; // f is added at the end to ensure it is stored as a float and not as a double. Possible lossy conversion from double to float
+		System.out.println(x);
+		
+		//6. double  - Java treats all decimal numbers as double by default
+		double marks = 89.5;
+		double temperature = 35; //can accept integer values - it would print a double value
+		System.out.println("marks : "+marks+" temperature : "+ temperature);
+		 
+		//7. char - must be enclosed within single quotes, if enclosed in double quotes it would be a string
+		char grade = 'O';
+		char symbol = '@';
+		
+		//8. boolean - (true or false)
+		boolean isStudent = true;
+		boolean isOnline = false;
+		System.out.println(isStudent);
+		
+		
+		// reference data types - store the address(reference) of an object
+		
+		//1. String
+		String name = "Harry";
+		System.out.println(name+ " Potter");
+		
+		//2. Array
+		int[] numbers = {1, 2, 3, 4};
+		System.out.println(numbers[0]);
+		
+		
+		// more complex types:
+		//3. classes
+		//4. interfaces
+		//5. objects 
+		
+
+	}
+
+}
