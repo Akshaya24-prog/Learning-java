@@ -47,6 +47,11 @@ public class random {
 		double g;
 		g = random.nextGaussian(); // from negative infinity to positive infinity
 		System.out.println(g);
+
+		//from math module - similar to Random.nextDouble()
+		System.out.println("Random number between 0.0 and 0.99 = "+Math.random());
+
+
 		
 	}
 
