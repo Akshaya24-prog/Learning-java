@@ -1,0 +1,60 @@
+package project.one;
+import java.util.Scanner;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String name = "";
+		
+		//continuously executes till the name is entered
+		while(name.isEmpty()) {
+			System.out.print("Enter your name : ");
+			name = sc.nextLine();
+		}
+		System.out.println("Hello "+name);
+		
+		//condition that is not updated inside the loop is called an infinite while loop.
+		//it might cause the computer to freeze up
+		
+		//print numbers
+		int i = 1;
+
+        while (i <= 5) {
+            System.out.println(i);
+            i++;
+        }
+		
+        //reverse a number
+        int num = 1234;
+        int reverse = 0;
+
+        while (num != 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num = num / 10;
+        }
+
+        System.out.println("Reversed: " + reverse);
+      
+        
+      //sum of first n numbers  
+        int j = 1;
+        int sum = 0;
+
+        while (j <= 5) {
+            sum += j;
+            j++;
+        }
+
+        System.out.println("Sum: " + sum);
+    
+        
+		sc.close();
+	}
+
+}
